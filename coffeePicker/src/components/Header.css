@@ -1,0 +1,9 @@
+.header_container {
+  margin: 0 auto;
+  text-align: center;
+  width: 40vw;
+}
+
+.header_container p {
+  text-wrap: wrap;
+}

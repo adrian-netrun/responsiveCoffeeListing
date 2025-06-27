@@ -1,8 +1,15 @@
 import { useState } from 'react'
-import Main from './components/Main'
+import ShopFront from './components/Shopfront'
+import Header from './components/Header'
+import './App.css'
 
 function App() {
-  return <Main />
+  return (
+    <>
+      <Header />
+      <ShopFront />
+    </>
+  )
 }
 
 export default App

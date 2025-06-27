@@ -1,15 +1,6 @@
-import { useEffect, useState, type SetStateAction } from 'react'
+import { useEffect, useState } from 'react'
+import { type ICoffeeType } from '../types'
 import axios from 'axios'
-
-interface ICoffeeType {
-  id: number
-  image: string
-  name: string
-  popular: string
-  price: string
-  rating: number
-  votes: number
-}
 
 export default function fetchData() {
   const coffeeUrl =
@@ -20,6 +11,7 @@ export default function fetchData() {
     axios
       .get(coffeeUrl)
       .then((data) => {
+        console.log(data.data)
         setCoffee(data.data)
         setWaiting(!wait)
       })

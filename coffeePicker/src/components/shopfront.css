@@ -1,0 +1,23 @@
+.content {
+  width: 30%;
+}
+
+.content img {
+  border-radius: 1rem;
+}
+
+.content_popular {
+  position: absolute;
+  top: -0.5%;
+  margin-left: 0.5rem;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  background-color: rgb(238, 200, 119);
+}
+
+.content_popular p {
+  font-weight: lighter;
+}
