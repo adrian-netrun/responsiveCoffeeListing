@@ -1,9 +1,9 @@
 .content {
-  width: 30%;
+  width: 100%;
 }
 
 .content img {
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 
 .content_popular {
@@ -18,6 +18,47 @@
   background-color: rgb(238, 200, 119);
 }
 
-.content_popular p {
-  font-weight: lighter;
+.content_name_price {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.coffee_name {
+  flex: 2;
+  text-align: left;
+  color: #fff6ec;
+  font-weight: normal;
+}
+
+.coffee_price {
+  flex: 0.5;
+  text-align: center;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+  font-size: 0.75;
+  color: #111315;
+  background-color: #bee3cc;
+}
+
+.content_meta_data {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.coffee_votes {
+  color: #fff6ec;
+}
+.coffee_rating {
+  margin-right: 0.2rem;
+  color: #fff6ec;
+}
+
+.star {
+  margin-right: 0.25rem;
+  height: 1.2rem;
+  width: 1.2rem;
 }

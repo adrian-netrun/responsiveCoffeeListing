@@ -1,8 +1,8 @@
 .flex_container {
   position: relative;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   display: flex;
   flex-wrap: wrap;
-  width: 100vh;
+  width: 50vw;
   justify-content: space-evenly;
 }

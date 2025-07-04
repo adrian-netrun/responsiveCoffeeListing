@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { type ICoffeeType } from '../types'
 import axios from 'axios'
 
-export default function fetchData() {
+export default function useFetchData() {
   const coffeeUrl =
     'https://raw.githubusercontent.com/devchallenges-io/curriculum/refs/heads/main/4-frontend-libaries/challenges/group_1/data/simple-coffee-listing-data.json'
   const [coffee, setCoffee] = useState<ICoffeeType[]>([])
@@ -17,9 +17,8 @@ export default function fetchData() {
       })
       .catch((error) => {
         console.log(error)
-        setWaiting(!wait)
       })
   }, [])
 
-  return { coffee, wait }
+  return { coffee }
 }

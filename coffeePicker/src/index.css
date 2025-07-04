@@ -3,6 +3,7 @@
 body {
   font-family: 'Work Sans', sans-serif;
   font-optical-sizing: auto;
-  margin: 0;
-  background-color: #222831;
+  background-color: #1a1b1d;
+  text-align: center;
+  margin: 0 auto;
 }
