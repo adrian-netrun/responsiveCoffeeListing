@@ -1,7 +1,14 @@
-import React, { act, useState } from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 
-function CustomButton({ style, content, active, handleChange }) {
+interface ButtonTypes {
+  style: {}
+  content: string
+  active: boolean
+  handleChange: () => void
+}
+
+function CustomButton({ style, content, active, handleChange }: ButtonTypes) {
   if (active) {
     return (
       <div
@@ -24,7 +31,12 @@ function CustomButton({ style, content, active, handleChange }) {
     )
 }
 
-export default function Header({ filter, setFilter }) {
+interface HeaderProps {
+  filter: boolean
+  setFilter: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export default function Header({ filter, setFilter }: HeaderProps) {
   const [isActive, setIsActive] = useState<boolean>(true)
   const selectedStyle = {
     backgroundColor: '#4d5562',
