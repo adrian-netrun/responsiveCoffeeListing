@@ -35,3 +35,14 @@
   place-content: center;
   margin: 1rem auto;
 }
+
+@media (min-width: 320px) {
+  .header_container {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .header_container p {
+    width: 100%;
+  }
+}

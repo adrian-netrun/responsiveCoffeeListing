@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1920px) {
   .flex_container {
     position: relative;
     margin: 1.5rem auto;
@@ -31,13 +31,12 @@
   }
 }
 
-@media (min-width: 468px) {
+@media (min-width: 300px) {
   .flex_container {
     position: relative;
-    margin: 1.5rem auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    width: 50vw;
     justify-content: space-evenly;
   }
 }
