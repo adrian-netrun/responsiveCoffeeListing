@@ -5,7 +5,7 @@ interface ButtonTypes {
   style: {}
   content: string
   active: boolean
-  handleChange: () => void
+  handleChange: any
 }
 
 function CustomButton({ style, content, active, handleChange }: ButtonTypes) {
